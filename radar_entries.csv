@@ -1,22 +1,156 @@
 id,plattform,verktyg,beskrivning,funktionsomrade,adopt,trial,assess,hold,createdAt,updatedAt
-Analys/logg,Elasticsearch,Ett sök- och analysmotor som används för att indexera loggar.,Loggning,No,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Applikationspublicering,Nginx,Webbserver och load balancer för att hantera applikationer.,Webbplattformar,No,Yes,No,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Batchplanering,Apache Airflow,Verktyg för batch-processautomation och schemaläggning.,Processstöd,Yes,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Databaser,PostgreSQL,Relationsdatabas för hantering av strukturerad data.,Databaser,Yes,Yes,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Digital Arbetsplats,Office 365,Verktyg för att skapa och samarbeta digitalt.,Samarbete,No,Yes,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Dokumenthantering,SharePoint,System för att lagra och hantera dokument.,Dokumenthantering,Yes,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-IAM,Azure AD,Identitets- och åtkomsthantering i molnet.,Skyddsförmågor,Yes,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Integration,MuleSoft,Verktyg för systemintegration.,Integration,Yes,No,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Inventering & Datahantering,Jira,Verktyg för att hantera och spåra arbete i projekt.,Processstöd,Yes,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Lagringsplattformar,Azure Blob Storage,Molnlagring för strukturerad och ostrukturerad data.,Lagringsplattformar,No,Yes,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Nyckel & certifikat,HashiCorp Vault,Verktyg för hantering av hemligheter som API-nycklar och certifikat.,Säkerhet,No,Yes,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Nätverk,Cisco,Nätverkslösningar för företagsinfrastruktur.,Nätverk,Yes,Yes,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Processstöd,Camunda,Processhanteringsplattform för att automatisera arbetsflöden.,Processstöd,Yes,Yes,No,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Samarbete,Slack,Kommunikationsplattform för team.,Samarbete,No,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-SDI,VMware,Mjukvarudefinierad infrastruktur för att virtualisera datacenter.,Server,Yes,No,No,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Server,Linux,Operativsystem för serverhantering.,Server,No,No,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Skyddförmågor,CrowdStrike,Verktyg för endpoint security.,Säkerhet & Sårbarhet,Yes,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Säkerhet & Sårbarhet,Fortinet,Verktyg för nätverkssäkerhet.,Skyddsförmågor,No,Yes,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Test & Deploy,Jenkins,CI/CD-verktyg för att automatisera tester och deploy.,Test & Deploy,No,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Webbplattformar,React,JavaScript-bibliotek för att bygga webbgränssnitt.,Webbplattformar,No,No,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
-Övervakning,Prometheus,Verktyg för att samla in och övervaka data från system.,Övervakning,Yes,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+5,"Digital Arbetsplats",M365,"Verktyg för att skapa och samarbeta digitalt.",Samarbete,No,Yes,Yes,Yes,"2024-10-07 20:40:16.211023","2024-10-07 20:40:16.211023"
+10,Lagringsplattformar,"Azure Blob Storage","Molnlagring för strukturerad och ostrukturerad data.",Lagringsplattformar,No,Yes,Yes,Yes,"2024-10-07 20:40:16.211023","2024-10-07 20:40:16.211023"
+12,"Nätverk",Cisco,"Nätverkslösningar för företagsinfrastruktur.","Nätverk",Yes,Yes,No,Yes,"2024-10-07 20:40:16.211023","2024-10-07 20:40:16.211023"
+16,Server,Linux,"Operativsystem för serverhantering.",Server,Yes,No,No,No,"2024-10-07 20:40:16.211023","2024-10-07 20:40:16.211023"
+17,Skyddsfunktioner,CrowdStrike,"Verktyg för endpoint security.","Säkerhet & Sårbarhet",Yes,No,Yes,Yes,"2024-10-07 20:40:16.211023","2024-10-07 20:40:16.211023"
+18,"Säkerhet & Sårbarhet",Fortinet,"Verktyg för nätverkssäkerhet.","Skyddsförmågor",No,Yes,Yes,Yes,"2024-10-07 20:40:16.211023","2024-10-07 20:40:16.211023"
+19,"Test & Deploy",Jenkins,"CI/CD-verktyg för att automatisera tester och deploy.","Test & Deploy",No,No,Yes,Yes,"2024-10-07 20:40:16.211023","2024-10-07 20:40:16.211023"
+24,Analys/logg,Fodora,"dfd fd f d f d f d. f df","Digital arbetsplats",Nej,Nej,Nej,Ja,"2024-10-09 10:09:00","2024-10-09 10:09:00"
+27,Analys/Logg,"Azure Monitor log","Produktionsstöd","Samla in loggar från Azure till Splunk",Yes,No,No,No,,
+28,Analys/Logg,"Helium log","Produktionsstöd","Helium Log är Skandia:s logghanteringssystem. Varför loggning? Korrekt logghantering i IT-system är avgörande för att uppfylla säkerhetskrav på spårbarhet samt för att stödja åtgärder vid teknisk drift, som felsökning och driftövervakning. Samma logginformation kan ha flera olika syften och intressenter, exempelvis både vid felsökning och vid utredning av säkerhetsincidenter. Gränssnitt för sökningar mot underliggande databaser, se Relations .Handläggarverktyg för slagningar mot underliggande databaser. En del av Adminportalen http://admin.skandianet.org/log Använder MSMQ och NserviceBus",Yes,No,No,No,,
+29,Analys/Logg,Splunk,"Produktionsstöd","Search, Analyze and Visualize machine data, including system log, application log, security log and audit log. Used in alarms, troubleshooting, security, compliance and auditing",No,No,Yes,No,,
+30,Analys/Logg,Tableau,"Finance data & Analytics","Plattform med Tableau, Alteryx och SQL server. Har som syfte att stödja self-service data prep och analys av data.",Yes,No,No,No,,
+31,Analys/Logg,Helium.Web.Statistics,Valhalla,"Helium.Web.Statistics är en wrapper på adobe analytics som anpassats för skandias behov. I dagsläget består webstatistikslösningen av 3 paket. Helium.web statistics som ligger på npm-feeden som paketet Skandia-statistics. Helium.Web.Statistics.Initializer som är ett npm paket samt Helium.Web.Statistics.Taghelper som är ett nugetpaket. 
+Taghelpern genererar ut en scripttagg som innehåller kod för att initiera statistiken med helium.web.statistics.initializer. Helium.web.statistics.initializer fångar events som helium.web kastar ur sig och anropar helium.web.statistics api som i sin tur använder adobe appdynamics för att skicka iväg statistik.",Yes,No,No,No,,
+32,Applikationspublicering,Apache,"Open Source webbserver","Applikationsstöd",Yes,No,No,No,,
+33,Applikationspublicering,Docker,"Öppen källkodsplattform som möjliggör att utvecklare och systemadministratörer kan automatisera distributionen av applikationer i isolerade och lättviktiga containrar","Applikationsstöd",Yes,No,No,No,,
+34,Applikationspublicering,"F5 LTM","F5 Local Traffic Manager (LTM) är en avancerad lastbalanserare och applikationsleveranskontroller","Applikationsstöd",Yes,No,No,No,,
+35,Applikationspublicering,IIS,"Internet Information Service, Microsofts webserver som används på ett stort antal webbar på Skandia","Applikationsstöd",No,Yes,No,No,,
+36,Applikationspublicering,NGINX,"NGINX används i dagsläget endast som webserver i Azure","Applikationsstöd",Yes,No,No,No,,
+37,Applikationspublicering,Tomcat,"Open source webbserver, kör Java-servlets och renderar webbsidor som använder JavaServer Pages (JSP). Runtime-miljö","Applikationsstöd",Yes,No,No,No,,
+38,Applikationspublicering,Node.js,"Gör det möjligt att använda JavaScript för att skriva serverapplikationer. Runtime-miljö","Applikationsstöd",Yes,No,No,No,,
+39,Applikationspublicering,"CA Workload Automation","Köpt plattform som används primärt av Bank","Team Norrsken",Yes,No,No,No,,
+40,Applikationspublicering,Hangfire,"Opensource .net bibliotek som primärt körs på den dedikerade batchservern.","Applikationsstöd",Yes,No,No,No,,
+41,Applikationspublicering,Jobtrac,"Verktyg i TSOT för att övervaka körda jobb. Alla intressents batchjobb körs i Mainframe","Devops Mainframe",Yes,No,No,No,,
+42,Applikationspublicering,PAIN,"Schedulerade jobb till Common och Appdata","Devops Mainframe",No,Yes,No,No,,
+43,Applikationspublicering,"Prisma Workflow","Integrationsplattform som främst hanterar försäkringsärenden, men även Swish","Integrationsstöd",Yes,No,No,No,,
+44,Applikationspublicering,SSIS,"SSIS baserat integrationsverktyg som används för att läsa in data till Inca's Migration tabeller","Spar-försäkring",Yes,No,No,No,,
+45,Applikationspublicering,"Windows Scheduler","Egenutvecklade batch-program (.NET, cmd, Python) som exekverar på en dedikerad batchserver","Applikationsstöd",Yes,No,No,No,,
+46,Databaser,Couchbase,"NoSQL-databas som kombinerar funktionerna från en dokumentdatabas med en högpresterande caching-teknik. Används för cachning","Applikationsstöd",Yes,No,No,No,,
+47,Databaser,"RedGate - SQL Monitor","Övervakning och hantering av SQL Server-databaser. Övervakar SQL Server-inställningar i realtid och samlar in data om prestanda och hälsa.","Applikationsstöd",Yes,No,No,No,,
+48,Databaser,MS-SQL,"Microsofts databashanterare.","Applikationsstöd",Yes,No,No,No,,
+49,Databaser,Postgres,"Open source databashanterare","Applikationsstöd",No,No,Yes,No,,
+50,Databaser,Oracle,"Databashanterare som manageras av CGI","Applikationsstöd",Yes,No,No,No,,
+51,"Digital Arbetsplats","Fax och SMS","On-Prem baserad tjänst idag ska bytas mot en cloudtjänst","Digital arbetsplats",No,No,No,Yes,"2024-10-13 18:35:32","2024-10-13 18:35:32"
+52,"Digital Arbetsplats","Microsoft Intune","Manageringsverktyg för både PC och Mobiler","Digital arbetsplats",Yes,No,No,No,"2024-10-13 18:35:32","2024-10-13 18:35:32"
+54,"Digital Arbetsplats","SMTP Relay","Funktionen ligger i Exchange och nyttjas av applikationer för att skicka mail","Digital arbetsplats",No,Yes,No,No,"2024-10-13 18:35:32","2024-10-13 18:35:32"
+55,"Digital Arbetsplats",VDI,"VDI miljön ligger i Citrix","Digital arbetsplats",Yes,No,No,No,"2024-10-13 18:35:32","2024-10-13 18:35:32"
+62,SDI,Chocolately,Pakethanterare,"Applikationsstöd",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+63,SDI,CloudVision,"Orkestreringsplattform för Arista Core. Hanterar konfiguration och OS uppgraderingar. Tar emot och sammanställer avancerad telemetri från Arista-nätverket.","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+64,SDI,Terraform,"Provisionera infrastruktur med kod","Applikationsstöd",No,Yes,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+65,SDI,"Ansible AAP",Automationsplattform,TBD,No,No,Yes,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+66,IAM,"Accesspolicy - F5 APM","F5 Access Policy Manager, Authenticationskontroll, Åtkomstkontroll och enhetskontroll","Infrastrukturstöd",No,Yes,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+67,IAM,BKS/BUR,"Egenutvecklat katalogtjänst som hanterar behörigheter i Mainframe och för webtjänster. BUR-Webbapplikation för att hantera rollbaserad behörighet m a p autentisering och auktorisation.",Mainframe/Stordator,No,Yes,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+68,IAM,"Citrix Workplace och Management","Ge användare en enhetlig och säker tillgång till sina applikationer, skrivbord och data oavsett var de befinner sig eller vilken enhet de använder. Citrix Jump Station används som åtkomsthanteringstjänst som används för att säkert få åtkomst till resurser i separata säkerhetszoner.","Digital arbetsplats",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+69,IAM,"Cyberark PAM","Används för att hantera känslig information som API-nycklar, lösenord, främst för konton med privilegierad access till Skandias infrastruktur och tjänster.",IAM,No,Yes,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+70,IAM,"Externt AD, Extuseradmin","Katalogtjänst som hanterar identitet och behörighet för Skandias externa mäklare, för att komma åt information i säljportalen. Gränssnitt till Ext-AD",IAM,No,Yes,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+71,IAM,"Microsoft Entra ID - skandianet.onmicrosoft.com","Microsoft Entra ID (tidigare Azure Active Directory) identitets- och åtkomsthanteringstjänst som gör det möjligt för dina anställda att få åtkomst till externa resurser i Azure, Microsoft 365 och andra SaaS-tjänster","Digital arbetsplats",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+72,IAM,"Microsoft Entra PIM","Privileged Identity Management är utformad för att hantera och övervaka tilldelningen och användningen av ""privilegierade åtkomst""","Digital arbetsplats",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+73,IAM,"Ping Identity","OAuth-funktion, utfärda åtkomsttoken till klientapplikationer","Integrationsstöd",No,No,No,Yes,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+74,IAM,"RADIUS AAA - Cisco ISE","Används som NAC på kontorsnäten, LAN och Wifi. Styr även admin access på nätverksutrustning.","Infrastrukturstöd",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+75,IAM,Curity,"Curity är en ledande leverantör av lösningar inom identity and access management (IAM) med fokus på säker och skalbar autentisering och auktorisering. Deras produkt, Curity Identity Server, stödjer standarder som OAuth2 och OpenID Connect och erbjuder API-säkerhet, multi-factor authentication (MFA), identity federation, och detaljerad åtkomstkontroll. Curity är byggt för mikrotjänstarkitekturer och kan distribueras både lokalt och i molnmiljöer, vilket gör det till ett populärt val inom bank, finans, hälsovård och andra branscher med höga krav på säkerhet och regelefterlevnad.","Applikationsstöd",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+76,IAM,"SailPoint - IIQ","System för hantering av användaridentiteter, åtkomsträttigheter och behörigheter. Läser ut alla användare och deras behörigheter i ett system. Används för att provisionera användare och behörigheter i system. Men även för att återgodkänna behörigheter och vid återkommande kontroller.",IAM,Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+77,IAM,"VPN - F5 Big-IP Edge Client","Klient VPN","Infrastrukturstöd",No,Yes,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+78,IAM,"Entra ID Identity Protection","Säkerhetsförmåga som kontrollerar identiteten vi inloggning mot Entra ID resurser","Digital arbetsplats",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+79,IAM,"Pointsharp ID","Två faktorsauthentisering lösning, ska på sikt ersättas av Azure MFA där det är möjligt","Digital arbetsplats",No,Yes,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+80,IAM,"YubiKey inloggningsmetod (FIDO 2)","Säkerhetsnyckel som säkerhetsnyckel. Stödjer standarder som FIDO2, U2F, OTP, och smartkort och används för att skydda konton och tjänster mot phishing och obehörig åtkomst.","Digital arbetsplats",Yes,No,No,No,"2024-10-13 18:38:04","2024-10-13 18:38:04"
+81,Integration,"Azure EventHub","Azure DevOps. Auditlogg skickas till eventhub i Azure som sedan hämtas av Splunk.","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+82,Integration,"ACE (App Connect Enterprise)","IntegrationBus i CMDB","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+83,Integration,API-Connect,"API Manager, Cloud Manager, Developer Portal, API Gateway, Consumer API, Platform API. Skapa och publicera HTTP-baserade API:er, tillämpa deras användningspolicyer, kontrollera åtkomst, vårda prenumerantgemenskapen, samla in och analysera användningsstatistik samt rapportera om prestanda.","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+84,Integration,"DB2 Connect","ODBC/JDBC client mot db2 mainframe","Applikationsstöd",No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+85,Integration,Filtra,"Genomför filsändning externt till plusgiro, bankgiro och SEB.","Försäkringsgemensamt",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+86,Integration,"GoAnywhere MFT","Filöverföringar mellan applikationer","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+87,Integration,"IBM MQ","Mainframe via HCL eller som bundlad med ACE på distribuerad miljö","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+88,Integration,NServiceBus,"Utvecklingsramverk för .Net, SA Team The Office En övergripande container för alla miljöer som ingår i NServiceBus/MSMQ","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+89,Integration,Prisma,"Prisma är en integrationsplattform som främst hanterar försäkringsärenden, men även Swish","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+90,Integration,QAM,"Administration av behörigheter (Authorization) för RabbitMQ","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+91,Integration,RabbitMQ,"Produktionsmiljö för plattform för meddelandehantering, händelsepublicering samt köhanterare för NServiceBus","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+92,Integration,SMTP-Relay,"E-post server, modul i Exchange server. Används av applikationer för att skicka e-post","Digital arbetsplats",No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+93,Integration,SSEK.Overview,"GUI to show SSEK configuration in Skandia. It will be accessible via release web","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+94,Integration,ZosConnect,"REST-proxy på mainframe för in- och utgående anrop",Mainframe/Stordator,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+95,Integration,QueueAdmin,"mjukvarukomponent QueueAdmin kopplad till NServicebus. Administratörsgränssnitt","Integrationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+96,Integration,"NOC (Notifieringscenter)","applikation för att skicka meddelanden",AG,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+97,"Inventering & Datahantering",SCCM,"distribuera, hantera och övervaka mjukvaruapplikationer, operativsystem, enhetskonfigurationer och uppdateringar","Infrastrukturstöd",No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+98,"Inventering & Datahantering","Servicenow Discovery","Upptäcker hela IT-infrastruktur och skapar en korrekt och aktuell registrering i din ServiceNow® CMDB. Den upptäcker både fysiska och logiska komponenter, inklusive virtuella maskiner, servrar, lagring, databaser, applikationer och mer","Processtöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+99,"Inventering & Datahantering",Siri,"Genom att importera metadata till datakatalogen erhålls förmågor som teknisk spårbarhet för data i Skandias applikationer samt att man kan relatera begrepp och definitioner som mastras i Qualiware till de fysiska förekomsterna av dem i de katalogiserade Skandiaapplikationerna. Datakatalogen gör att Skandias medarbetare kan hitta, förstå och se kvalitet på data de behöver i olika arbetsuppgifter.","Informationsförsörjning",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+100,"Inventering & Datahantering",Snow,"En applikation för att inventera installationer av mjukvara i Skandias IT miljö, samt jämföra dessa installationer mot det faktiska innehavet av licenser. - Applikationen identifierar compliance risker - Identifierar överlicensiering och därmed onödiga kostnader.","IKS - IT Administration IT-stöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+101,"Inventering & Datahantering",WSUS,"WSUS, windows update service System som hanterar Microsoft patchning av windows servrar.","Infrastrukturstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+102,Lagringsplattformar,e-arkiv,"SDC-system som nås via Citrix. Clearingen använder e-arkiv för att ta fram rapporter vid avstämning. Det finns även rapporter med våra avgående och ankommande filer mm. Vi använder e-arkiv dagligen i olika syften. Tjänsten levereras av SDC. Arkiv som innehåller rapporter som tex kortstatistik, rapporter avseende filflöden.","Core Banking",No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+103,Lagringsplattformar,Minio,"S3-kompatibelt Object storage för DW3","Applikationsstöd",No,No,Yes,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+104,Lagringsplattformar,Nessus,"Binary repository till Chocolately","Applikationsstöd",No,No,Yes,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+105,Lagringsplattformar,Ondemand,"Fillagringssystem. IBM Tivoli",Skandia,No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+106,"Nyckel, & Certifikat","Azure Key Vault","PaaS tjänst som kan användas i hybrid cloud som provisioneras med IaC","Applikationsstöd",No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+107,"Nyckel, & Certifikat",DORK,"Dokument- och regelkatalog för Skandia. Förvarar och tillhandahåller metadata kopplat till alla typer av dokument, t.ex. för lagring eller distribution.",Dokumenthantering,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+108,"Nyckel, & Certifikat","Helium Security","Säkerhet för känsliga data och autentisering.","Säkerhet",No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+109,"Nyckel, & Certifikat",HSM,"Thales HSM appliances. Används av SKBSE BankID. Används för att skydda autentisering och kryptonycklar.","Säkerhet",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+110,"Nyckel, & Certifikat","Secret Server","Säker lagring av nycklar och känslig information. Produkten kallas nu BeyondTrust Password Safe.","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+121,Server,"Azure VM","Virtuella maskiner i Azure","Infrastrukturstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+122,Server,Docker,"Containeriserad applikationsserver","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+124,Server,Kubernetes,"Orkestrera containers","Applikationsstöd",No,Yes,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+126,Server,IIS,"Web server i företagsmiljö","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+129,Applikationspublicering,"Octopus Deploy",CI/CD,"Utvecklingsstöd",Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+131,Skyddsfunktioner,"API Security","Övervaka API:er och skydda känslig data",Skydd,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+132,Skyddsfunktioner,Acronis,"Backup-tjänst",Skydd,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+133,Skyddsfunktioner,Centrify,"Säkerhet för administrativa konton och enheter",Skydd,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+134,Skyddsfunktioner,CrowdStrike,"Endpoint detection and response",Skydd,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+137,Skyddsfunktioner,FortiGate,"Firewalls och nätverksintrångsskydd",Skydd,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+139,Skyddsfunktioner,"Palo Alto","Firewall och Intrusion Prevention System",Skydd,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+142,"Test & Deploy",Selenium,"Automatiserade tester av webbsidor och webbapplikationer",Test,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+143,"Test & Deploy",Postman,API-tester,Test,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+144,"Test & Deploy",JMeter,"Prestandatestning av applikationer",Test,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+145,"Test & Deploy",TestRail,Testhanteringssystem,Test,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+146,"Test & Deploy",Zebrunner,Testautomatisering,Test,Yes,No,No,No,"2024-10-13 19:14:56","2024-10-13 19:14:56"
+147,"Test & Deploy",ReadyAPI,"Testverktyg för test av APIer.","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+148,"Test & Deploy",SkandiaWireMock.Net,"SkandiaWireMock.Net är en submängd och modifierad version av open source projektet WireMock.Net","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+149,"Test & Deploy","Test Data Management (TDM)","System som hanterar kopiering av produktionsdata och tvätt (maskering, borttag av Skandiaanställda och personer med skyddad identitet, subsetting) till testmiljöer.","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+150,"Test & Deploy",Testcontainers,"Standardprogramvarupaket för att paketera kod för ett program tillsammans med relaterade konfigurationsfiler och bibliotek och med de beroenden som krävs för att en applikation ska köras.","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+151,"Test & Deploy",Nyget,"Pakethanterare för .NET-plattformen, som används för att hantera beroenden och distribuera .NET-programvarupaket","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+152,Webbplattformar,"Application Insight","Azure PaaS Produktion Subscription","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+153,Webbplattformar,"Azure Batch service","Tjänst i Azure för att skapa batchar https://azure.microsoft.com/en-us/products/batch/","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+154,Webbplattformar,"Functions Apps","Azure PaaS Produktion Subscription","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+155,Webbplattformar,LogicApps,"Azure PaaS Produktion Subscription","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+156,Webbplattformar,MSE,"microsoft service environment, webbhotell. Prod o Dev","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+157,Webbplattformar,WAS8,"WebSphere Application Server. Runtime verifikationsmiljö för egenutvecklade javaapplikationer","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+158,"Övervakning",AppDynamics,"Application Performance Monitoring e2e, including monitoring end user experience in web browser and mobile app, server, database, network and synthetic monitoring. Visualize business transaction flow and underlying resources usage in real time, alarms, troubleshooting, KPI reporting","Produktionsstöd",No,Yes,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+159,"Övervakning","Azure Monitoring","Används av Yoda","Produktionsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+160,"Övervakning",ServicePulse,"Ger möjlighet till övervakning att meddelanden har behandlats och omstart av meddelanden som hamnat på felkö. Åtkomst till ServicePulse går via Citrix och speciella behörigheter måste beställas till CitrixKontot.",".net kund",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+161,"Övervakning",Solarwinds,"Solarwinds Network Management plattform för övervakning av nätverksprodukter samt Core Infra miljön. Installerad på SESTNM15 Core Infra.","Infrastrukturstöd",No,Yes,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+162,"Övervakning",SQLMonitor,"Database DBInventory - Våran egen mgmt server för SQL tjänsten. Servert för SQLMonitor/övervakning","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+163,"Övervakning",Crashlytics,"Fel logghantering för mobilapplikationer (Skandia mobilapp)","Individkund app och webb",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+164,"Övervakning",Zabbix,"CGI:s övervakning av servrar och när","Infrastrukturstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+165,"Övervakning",Grafana,"Monitorering i Hyper-V","Applikationsstöd",No,No,Yes,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+166,"Övervakning",Opsview,"Advanias övervakning av HCI","Infrastrukturstöd",Yes,No,No,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+167,Applikationspublicering,Podman,Containermotor,"Infrastrukturstöd",No,No,Yes,No,"2024-10-13 19:31:41","2024-10-13 19:31:41"
+171,"Nyckel, & Certifikat",HSM,"Thales HSM appliances. Används av SKBSE BankID. Används av Skandianet CA V2. Används av TicketDispenser","Applikationsstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+173,"Nätverk","Arista Core","Arista VXLAN Core","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+174,"Nätverk","Cisco Access Nätverk","Cisco SDA access nätverk för kontor. LAN och Wi-Fi. Dynamiska portar med NAC","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+175,"Nätverk","Cisco Core","Cisco MPLS Core","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+176,"Nätverk","Cisco DNA center","DNA center","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+177,"Nätverk","Hyperconverged Infrastructure - HCI","HCI-plattform i Core infra","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+178,"Nätverk",Infoblox,"DDI (DHCP DNS IPAM). Hantering av Skandias IP plan. DHCP. Extern DNS resolver. Infoblox används som gränssnitt för att administrera DNS även Intern DNS funktion samt interna zoner ligger och ägs av AD.","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+179,"Nätverk",Netbox,"Används för att dokumentera rack och förbindelser I Skandias Datacenter. Används ofta som Network Source of Truth för automation.","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+180,"Nätverk",Netgraph,"Gästinloggning till Skandias trådade och trådlösa nät.","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+181,"Nätverk","ScriptLogic Security Explorer","system & remote management","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+182,"Nätverk","Telia Datanet WAN","Telia Datanet är en WAN tjänst för anslutning av kontor och partners. Kryptering används där det är möjligt.","Infrastruktursstöd",Yes,No,No,No,"2024-10-13 19:43:04","2024-10-13 19:43:04"
+183,"Säkerhet & Sårbarhet","Azure ITSEC","säkerhetsövervakning it-säkerhet.","IT övrigt",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+184,"Säkerhet & Sårbarhet",BrowserStack,"Molnbaserad tjänst för kompatibilitetstest. Dvs test som utförs för att säkerställa att våra applikationer fungerar bra med olika kombinationer av hård- och mjukvara på desktops och mobila apparater. Ex. olika kombinationer av OS och webbläsare på olika mobila telefoner.","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+185,"Säkerhet & Sårbarhet",CIM,"Krishanterings- och massnotifieringsverktyg","",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+186,"Säkerhet & Sårbarhet",DetAct,"Fraud är ett samlingsnamn över de tjänster som bidrar till bedrägeriövervakningen. FraudDetection-Systemet används för - Övervakning av Skandias digitala kanaler med avseende på hot som overlay, trojaner, och maskinell styrning - Övervakning av kundens beteende i de digitala kanalerna - Övervakning av avgående transaktioner (olika typer av överföringar och betalningar) Systemet övervakar trafiken mellan Skandias kunder och våra digitala tjänster (t.ex. Internetbanken). Även trafik mellan Skandia och BankIDs tjänster övervakas för att få med information från BankID vid inloggning och signering.","Inloggning & Säkerhet",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+187,"Säkerhet & Sårbarhet",Detectify,"Dynamic Application Security Testing (DAST) tool. Kontrollerar versioner på programvaror","IT övrigt",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+188,"Säkerhet & Sårbarhet","e-postsäkerhetsmekanismer","Denna SaaS-tjänst används för: - visualisering och larmsättning av DMARC Aggregate-rapporter - visualisering och larmsättning av TLS-RPT - publicering av MTA-STS-policy Leverantör: Uriports","IT övrigt",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+189,"Säkerhet & Sårbarhet","Microsoft Defender","Alla servrar i skandias miljöer skannas regelbundet efter sårbarheter i operativsystem och applikationer. För servrar med operativsystem Windows så använder vi MDE som verktyg för sårbarhetsskanning.","Digital Arbetsplats",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+190,"Säkerhet & Sårbarhet",Mnemonic,"Mnemonic är företagsnamnet. Använder Argus säkerhetslösning","IT-säk",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+191,"Säkerhet & Sårbarhet",NetClean,"Agentbaseratfilter för upptäckande av Barnpornografi","Digital Arbetsplats",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+192,"Säkerhet & Sårbarhet",Sk-Sauron,"Skanning av källkod","IT övrigt",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+193,"Säkerhet & Sårbarhet",Sonarcloud,"Verktyg för scanning av källkod för att upprätthålla god kodkvalité vid systemutveckling. Tillhandahålls som SaaS-tjänst av SonarSource.","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+194,"Säkerhet & Sårbarhet",SonarQube,"SAST skanning och kodkvalite","Test & Utvecklingsstöd",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+195,"Säkerhet & Sårbarhet",TeamSecurityScore,"Gränssnitt för att få en säkerhetsklassning för SAFe teamens applikationer.","IT-säk",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+196,"Säkerhet & Sårbarhet","Entra ID Conditional Access","Säkerhetsförmåga som kontrollerar all inloggning mot Entra ID resurser. Detta är en primära skyddsförmågan som används för Entra ID","Digital Arbetsplats",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+197,"Säkerhet & Sårbarhet",Nexpose,"automatiserade säkerhetstester av IT-infrastruktur","Digital Arbetsplats",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+198,"Säkerhet & Sårbarhet","Skandia Desktop Analytics","Oklart om vi ska ha kvar denna","Digital Arbetsplats",Yes,No,No,No,"2024-10-14 18:51:02","2024-10-14 18:51:02"
+199,"Processtöd",ServiceNow,ITSM-system,"Processtöd",Yes,No,No,No,"2024-10-14 19:25:04","2024-10-14 19:25:04"
+200,"Processtöd",CMDB,CMDB,"Processtöd",Yes,No,No,No,"2024-10-14 19:25:04","2024-10-14 19:25:04"
+201,"Digital Arbetsplats",Quest,"Recover Manager for AD","Digital arbetsplats",No,Yes,No,No,"2024-10-14 19:29:39","2024-10-14 19:29:39"
+202,"Nyckel, & Certifikat","Azure DevOps Vault","Valv  för hantering av nycklar","Utvecklingsstöd",No,No,Yes,No,"2024-10-14 19:57:22","2024-10-14 19:57:22"
+203,"Nyckel, & Certifikat","Cyberark Vault","Valv i Cyberark",IAM,Yes,No,No,No,"2024-10-14 19:59:29","2024-10-14 19:59:29"
