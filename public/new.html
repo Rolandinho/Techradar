@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Tool</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Add New Tool</h1>
+    <form id="new-tool-form">
+        <label for="verktyg">Tool:</label>
+        <input type="text" id="verktyg" name="verktyg" required>
+
+        <label for="plattform">Platform:</label>
+        <select id="plattform" name="plattform" required>
+            <option value="">Select Platform</option>
+            <!-- Existing platforms will be populated here -->
+        </select>
+
+        <label for="funktionsomrade">Function Area:</label>
+        <input type="text" id="funktionsomrade" name="funktionsomrade" required>
+
+        <label for="beskrivning">Description:</label>
+        <textarea id="beskrivning" name="beskrivning" rows="4" required></textarea>
+
+        <label>Status:</label>
+        <div>
+            <input type="radio" id="adopt" name="status" value="ADOPT" required>
+            <label for="adopt">ADOPT</label>
+            <input type="radio" id="trial" name="status" value="TRIAL">
+            <label for="trial">TRIAL</label>
+            <input type="radio" id="assess" name="status" value="ASSESS">
+            <label for="assess">ASSESS</label>
+            <input type="radio" id="hold" name="status" value="HOLD">
+            <label for="hold">HOLD</label>
+        </div>
+
+        <button type="submit">Add Tool</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch existing platforms and populate the dropdown
+            fetch('/radar-entries')
+                .then(response => response.json())
+                .then(data => {
+                    const platformSelect = document.getElementById('plattform');
+                    const uniquePlatforms = [...new Set(data.map(entry => entry.plattform))];
+
+                    uniquePlatforms.forEach(platform => {
+                        const option = document.createElement('option');
+                        option.value = platform;
+                        option.textContent = platform;
+                        platformSelect.appendChild(option);
+                    });
+                })
+                .catch(error => console.error('Error fetching radar entries:', error));
+
+            document.getElementById('new-tool-form').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                const verktyg = document.getElementById('verktyg').value;
+                const plattform = document.getElementById('plattform').value;
+                const funktionsomrade = document.getElementById('funktionsomrade').value;
+                const beskrivning = document.getElementById('beskrivning').value;
+
+                // Get the selected status and set others to 'No'
+                const status = document.querySelector('input[name="status"]:checked').value;
+                const data = {
+                    verktyg,
+                    plattform,
+                    funktionsomrade,
+                    beskrivning,
+                    adopt: status === 'ADOPT' ? 'Yes' : 'No',
+                    trial: status === 'TRIAL' ? 'Yes' : 'No',
+                    assess: status === 'ASSESS' ? 'Yes' : 'No',
+                    hold: status === 'HOLD' ? 'Yes' : 'No'
+                };
+
+                // Send POST request to add new tool
+                fetch('/add-radar-entry', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Tool added successfully!');
+                        window.location.reload(); // Reload to see the new entry
+                    } else {
+                        alert('Failed to add tool.');
+                    }
+                })
+                .catch(error => console.error('Error adding tool:', error));
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skandia Tech Radar</title>
+    <style>
+        #tooltip {
+            position: absolute;
+            visibility: hidden;
+            background: #fff;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        .platform {
+            margin-bottom: 10px;
+        }
+        .platform div {
+            cursor: pointer;
+            padding: 3px;
+            transition: background-color 0.3s;
+        }
+        .platform div:hover {
+            background-color: #f0f0f0;
+        }
+        .highlighted {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .radar-tool-text {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Skandia Tech Radar</h1>
+
+    <div id="radar-container">
+        <svg id="radarSVG" width="800" height="800" viewBox="0 0 800 800">
+            <!-- Cirklar för de olika nivåerna -->
+            <circle cx="400" cy="400" r="150" stroke="black" stroke-width="2" fill="none" />
+            <circle cx="400" cy="400" r="225" stroke="black" stroke-width="2" fill="none" />
+            <circle cx="400" cy="400" r="325" stroke="black" stroke-width="2" fill="none" />
+            <circle cx="400" cy="400" r="400" stroke="black" stroke-width="2" fill="none" />
+        </svg>
+
+        <div id="platforms-container"></div>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const svg = d3.select('#radarSVG');
+            const tooltip = d3.select('#tooltip');
+            const data = [
+                { label: 'ADOPT', radius: 150, color: '#5aa300' },
+                { label: 'ASSESS', radius: 225, color: '#c7b900' },
+                { label: 'TRIAL', radius: 325, color: '#019fb0' },
+                { label: 'HOLD', radius: 400, color: '#e09b96' }
+            ];
+
+            let currentVisibleText = null; // Track visible text
+
+            // Add level names to respective circles
+            data.forEach(d => {
+                svg.append('text')
+                    .attr('x', 400)
+                    .attr('y', 400 - d.radius + 20)
+                    .attr('text-anchor', 'middle')
+                    .attr('fill', '#666')
+                    .attr('font-size', '14px')
+                    .text(d.label);
+            });
+
+            fetch('/radar-entries')
+                .then(response => response.json())
+                .then(radarEntries => {
+                    const platformsContainer = d3.select('#platforms-container');
+                    const angleIncrement = (2 * Math.PI) / radarEntries.length;
+
+                    radarEntries.forEach((entry, index) => {
+                        const status = ['adopt', 'trial', 'assess', 'hold'].find(key => entry[key] === 'Yes');
+                        const categoryData = data.find(d => d.label.toUpperCase() === status?.toUpperCase());
+                        if (!categoryData) return;
+
+                        let angle, distance;
+                        if (status.toLowerCase() === 'adopt') {
+                            // Randomize angle and use square root for distance to ensure uniform distribution
+                            angle = Math.random() * 2 * Math.PI;
+                            distance = Math.sqrt(Math.random()) * categoryData.radius; // Uniform distribution over area
+                        } else {
+                            angle = Math.random() * 2 * Math.PI;
+                            distance = categoryData.radius * 0.8;
+                        }
+
+                        const posX = 400 + distance * Math.cos(angle);
+                        const posY = 400 + distance * Math.sin(angle);
+
+                        const entryCircle = svg.append('circle')
+                            .attr('cx', posX)
+                            .attr('cy', posY)
+                            .attr('r', 10)
+                            .attr('fill', categoryData.color)
+                            .attr('stroke', '#FFF')
+                            .attr('stroke-width', 2);
+
+                        const entryIDText = svg.append('text')
+                            .attr('x', posX)
+                            .attr('y', posY + 3)
+                            .attr('fill', '#FFF')
+                            .attr('font-size', '8px')
+                            .attr('text-anchor', 'middle')
+                            .text(entry.id);
+
+                        const entryText = svg.append('text')
+                            .attr('x', posX + 15)
+                            .attr('y', posY)
+                            .attr('fill', categoryData.color)
+                            .attr('font-size', '10px')
+                            .attr('class', 'radar-tool-text')
+                            .style('visibility', 'hidden')
+                            .text(entry.verktyg);
+
+                        let platformDiv = platformsContainer.select(`div.platform[data-platform="${entry.plattform}"]`);
+                        if (platformDiv.empty()) {
+                            platformDiv = platformsContainer.append('div')
+                                .attr('class', 'platform')
+                                .attr('data-platform', entry.plattform);
+
+                            platformDiv.append('h3').text(entry.plattform);
+                        }
+
+                        const toolDiv = platformDiv.append('div')
+                            .text(`${entry.id} ${entry.verktyg}`)
+                            .attr('data-tool', entry.verktyg)
+                            .on('mouseover', () => {
+                                entryCircle.attr('fill', 'orange');
+                                entryText.style('visibility', 'visible');
+                            })
+                            .on('mouseout', () => {
+                                entryCircle.attr('fill', categoryData.color);
+                                entryText.style('visibility', 'hidden');
+                            })
+                            .on('click', () => {
+                                if (currentVisibleText) {
+                                    currentVisibleText.style('visibility', 'hidden');
+                                }
+                                entryText.style('visibility', 'visible');
+                                currentVisibleText = entryText;
+                            });
+
+                        entryCircle
+                            .on('mouseover', () => {
+                                toolDiv.classed('highlighted', true);
+                                entryText.style('visibility', 'visible');
+                            })
+                            .on('mouseout', () => {
+                                toolDiv.classed('highlighted', false);
+                                entryText.style('visibility', 'hidden');
+                            });
+                    });
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+id,plattform,verktyg,beskrivning,funktionsomrade,adopt,trial,assess,hold,createdAt,updatedAt
+Analys/logg,Elasticsearch,Ett sök- och analysmotor som används för att indexera loggar.,Loggning,No,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Applikationspublicering,Nginx,Webbserver och load balancer för att hantera applikationer.,Webbplattformar,No,Yes,No,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Batchplanering,Apache Airflow,Verktyg för batch-processautomation och schemaläggning.,Processstöd,Yes,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Databaser,PostgreSQL,Relationsdatabas för hantering av strukturerad data.,Databaser,Yes,Yes,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Digital Arbetsplats,Office 365,Verktyg för att skapa och samarbeta digitalt.,Samarbete,No,Yes,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Dokumenthantering,SharePoint,System för att lagra och hantera dokument.,Dokumenthantering,Yes,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+IAM,Azure AD,Identitets- och åtkomsthantering i molnet.,Skyddsförmågor,Yes,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Integration,MuleSoft,Verktyg för systemintegration.,Integration,Yes,No,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Inventering & Datahantering,Jira,Verktyg för att hantera och spåra arbete i projekt.,Processstöd,Yes,No,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Lagringsplattformar,Azure Blob Storage,Molnlagring för strukturerad och ostrukturerad data.,Lagringsplattformar,No,Yes,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Nyckel & certifikat,HashiCorp Vault,Verktyg för hantering av hemligheter som API-nycklar och certifikat.,Säkerhet,No,Yes,Yes,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Nätverk,Cisco,Nätverkslösningar för företagsinfrastruktur.,Nätverk,Yes,Yes,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Processstöd,Camunda,Processhanteringsplattform för att automatisera arbetsflöden.,Processstöd,Yes,Yes,No,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Samarbete,Slack,Kommunikationsplattform för team.,Samarbete,No,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+SDI,VMware,Mjukvarudefinierad infrastruktur för att virtualisera datacenter.,Server,Yes,No,No,No,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Server,Linux,Operativsystem för serverhantering.,Server,No,No,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Skyddförmågor,CrowdStrike,Verktyg för endpoint security.,Säkerhet & Sårbarhet,Yes,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Säkerhet & Sårbarhet,Fortinet,Verktyg för nätverkssäkerhet.,Skyddsförmågor,No,Yes,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Test & Deploy,Jenkins,CI/CD-verktyg för att automatisera tester och deploy.,Test & Deploy,No,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Webbplattformar,React,JavaScript-bibliotek för att bygga webbgränssnitt.,Webbplattformar,No,No,No,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023
+Övervakning,Prometheus,Verktyg för att samla in och övervaka data från system.,Övervakning,Yes,No,Yes,Yes,2024-10-07 20:40:16.211023,2024-10-07 20:40:16.211023

@@ -1,0 +1,24 @@
+# Ignorera node_modules-mappen
+node_modules/
+
+# Ignorera loggfiler
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorera miljövariabelfiler
+.env
+
+# Ignorera cache och tillfälliga filer
+.cache/
+.tmp/
+
+# Ignorera byggfiler
+dist/
+build/
+
+# Ignorera OS-specifika filer
+.DS_Store
+Thumbs.db
+

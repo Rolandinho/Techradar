@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "rolosb",
+    "password": "rDJhsypJ!$TASh88",
+    "database": "techradar",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

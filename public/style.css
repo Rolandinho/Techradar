@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.selected {
+    background-color: gray;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.platform {
+    margin: 20px 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.platform-tool {
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.platform-tool:hover {
+    background: #e0e0e0;
+}
+
+.radar-text {
+    fill: #A9A9A9; /* Grå färg för text */
+    font-size: 12px; /* Justera teckenstorlek */
+    text-anchor: middle; /* Centrera texten */
+}
+
+.radar-tool {
+    fill: #000; /* Standard färg för verktyg */
+}
