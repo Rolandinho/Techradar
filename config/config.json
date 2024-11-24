@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "rolosb",
-    "password": "rDJhsypJ!$TASh88",
-    "database": "techradar",
+    "password": null,  // Lämna null här
+    "database": "Techradar",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "sqlite"
   }
 }

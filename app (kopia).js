@@ -1,11 +1,7 @@
-require('dotenv').config(); // Ladda miljövariabler från .env
 const express = require('express');
 const path = require('path');
 const db = require('./db'); // Knytning till databasen (db.js)
 const app = express();
-
-// Använd miljövariabler för porten
-const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 app.use(express.json());
@@ -66,6 +62,6 @@ app.delete('/delete-radar-entry/:id', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server started on http://localhost:${PORT}`);
+app.listen(3000, () => {
+    console.log('Server started on http://localhost:3000');
 });

@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('techradar.db');
+const db = new sqlite3.Database('databas/techradar.db');
 
 const getRadarEntries = async () => {
     const query = 'SELECT id, plattform, verktyg, beskrivning, funktionsomrade, adopt, trial, assess, hold FROM radar_entries';
